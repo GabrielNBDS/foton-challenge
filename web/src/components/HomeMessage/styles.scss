@@ -1,0 +1,24 @@
+.left-container{
+    margin-top: 2vh;
+    width: 12.5vw;
+    text-align: left;
+    font-size: large;
+
+}
+
+.right-container{
+    margin-top: 2.5vh;
+    width: 12.5vw;
+    display: flex;
+    flex-direction: column;
+
+    & a {
+        width: 4vw;
+        margin-left: 8.5vw ;
+    }
+
+    a:first-child{
+        margin-bottom: 5px;
+        margin-left: 9.5vw ;
+    }
+}

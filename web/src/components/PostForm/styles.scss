@@ -1,0 +1,8 @@
+.newPost{
+    padding: 10px;
+    height: 70vh;
+
+    &::placeholder {
+        vertical-align: baseline;
+    }
+}

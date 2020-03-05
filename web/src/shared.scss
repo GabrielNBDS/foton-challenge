@@ -1,0 +1,65 @@
+$color-primary: #1EB36B;
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    color: #BCBCBC;
+}
+
+a{
+    color: $color-primary;
+}
+
+input, textarea{
+    height: 5vh;
+    width: 25vw;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 24px;
+    color: #BCBCBC;
+    background-color: #EEEEEE;
+
+    margin-bottom: 30px;
+    padding: 0 10px;
+
+    &[type=submit]{
+        background-color: $color-primary;
+        color: #fff;
+    }
+    
+    &::placeholder{
+        color: #BCBCBC;
+
+    }
+
+    &:first-child{
+        margin-top: 30px;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+form{
+    @include flex-column;
+    align-items: center;
+
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    width: 25vw;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: $color-primary;
+    margin-bottom: 2vh;
+}
